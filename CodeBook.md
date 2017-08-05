@@ -25,19 +25,35 @@ Steps are mentioned below
 # Variables
 
 fileUrl - URL for data set file download
+
 x_train - Read X_train.txt file
+
 y_train - Read y_train.txt file
+
 subject_train - Read subject_train.txt file
+
 x_test - Read X_test.txt file
+
 y_test - Read y_test.txt file
+
 subject_test - Read subject_test.txt file
+
 features - Read features.txt file
+
 activity_labels - Read activity_labels.txt file
+
 all_train - Merged columns from train related files
+
 all_test - Merged columns from test related files
+
 train_test - Merged train and test columns and records
+
 mean_and_std - Mean and Std columns
+
 with_mean_std - mean and Std columns from train_test file
+
 with_activity_labels - Merged with activity_labels
+
 tidy_set - mean by subjectId and activityId columns
+
 final_tidy_set - final file ordered by subjectId and activityId
