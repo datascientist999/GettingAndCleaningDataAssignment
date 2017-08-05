@@ -1,4 +1,4 @@
-##Getting & Cleaning Data Assignment
+## Getting & Cleaning Data Assignment
 
 Contains following files:
 run_analysis.R - R code file
