@@ -67,14 +67,14 @@ mean_and_std <- (
 with_mean_std <- train_test[, mean_and_std == TRUE]
 
 # Data set with descriptive variable names
-setWithActivityNames <- merge(with_mean_std,
+with_activity_labels <- merge(with_mean_std,
                               activity_labels,
                               by = 'activityId',
                               all.x = TRUE)
 # Second independent tidy data set with the average of each variable for each activity and each subject
 
 tidy_set <-
-    aggregate(. ~ subjectId + activityId, setWithActivityNames, mean)
+    aggregate(. ~ subjectId + activityId, with_activity_labels, mean)
 #write.table(tidy_set, "./data/tidy_set.txt", row.name=FALSE)
 
 final_tidy_set <-
